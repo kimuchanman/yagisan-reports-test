@@ -1,0 +1,9 @@
+<LayoutXml>
+  <LinearLayout size="A4" orientation="vertical">
+    <LayoutBody>
+      <Text size="30">${message}</Text>
+      <Spacer height="30" />
+      <Text size="12">このPDFはyagisan-reportsによって作成されました</Text>
+    </LayoutBody>
+  </LinearLayout>
+</LayoutXml>

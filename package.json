@@ -1,0 +1,5 @@
+{
+  "dependencies": {
+    "yagisan-reports-devtool": "github:DenkiYagi/yagisan-reports-devtool"
+  }
+}

@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LayoutXml>
+  <LinearLayout size="A4" orientation="horizontal" margin="20">
+    <LayoutBody>
+      <Grid cols="90 110 *" rows="auto">
+        <GridCell>
+          <Grid rows="10" cols="20" borderThickness="0.7">
+            <GridCell valign="center"><Text align="center">第1表</Text></GridCell>
+          </Grid>
+        </GridCell>
+        <GridCell row="0" col="1">
+          <Text size="20" bold="true">居宅サービス計画表（1）</Text>
+        </GridCell>
+        <GridCell row="0" col="2" valign="bottom">
+          <Text>作成年月日  ${date}</Text>
+        </GridCell>
+      </Grid>
+
+      <Grid cols="160 50 50">
+        <GridCell></GridCell>
+        <GridCell row="0" col="1">
+          <Grid rows="8" cols="45" borderThickness="0.7">
+            <GridCell valign="center">
+              <StackBlock height="10">
+                <Ellipse height="7" width="13" x="4" y="2" hidden="${!isShokai}"/>
+                <Ellipse height="7" width="13" x="16" y="2" hidden="${!isShoukai}"/>
+                <Ellipse height="7" width="13" x="28" y="2" hidden="${!isKeizoku}"/>
+                <Text width="90" x="7" y="3">初回・紹介・継続</Text>
+              </StackBlock>
+            </GridCell>
+          </Grid>
+        </GridCell>
+        <GridCell row="0" col="2">
+          <Grid rows="8" cols="40" borderThickness="0.7">
+            <GridCell valign="center">
+              <StackBlock height="10">
+                <Ellipse height="7" width="18" x="4" y="2" hidden="${!isNinteizumi}" />
+                <Ellipse height="7" width="18" x="20" y="2" hidden="${!isShinseityu}"/>
+                <Text width="90" x="7" y="3">認定済・申請中</Text>
+              </StackBlock>
+            </GridCell>
+          </Grid>
+        </GridCell>
+      </Grid>
+
+      <Spacer height="8" />
+
+      <Grid cols="70 70 110" rows="10">
+        <GridCell>
+          <Text underline="true">利用者様     ${careReceiverName} 殿</Text>
+        </GridCell>
+        <GridCell row="0" col="1">
+          <Text underline="true" >生年月日 ${date}</Text>
+        </GridCell>
+        <GridCell row="0" col="2">
+          <Text underline="true" >住所 ${address}</Text>
+        </GridCell>
+      </Grid>
+
+      <Text underline="true">居宅サービス計画作成者氏名   ${creatorName}</Text>
+      <Spacer height="2" />
+      <Text underline="true">居宅介護支援事業者・辞表署名及び所在地   ${address}</Text>
+      <Spacer height="2" />
+      <Grid cols="140 140">
+        <GridCell>
+          <Text underline="true">居宅サービス計画作成（変更）日   ${date}</Text>
+        </GridCell>
+        <GridCell col="1">
+          <Text underline="true">初回居宅サービス計画作成日   ${date}</Text>
+        </GridCell>
+      </Grid>
+
+      <Spacer height="2" />
+      <Grid cols="70 140">
+        <GridCell>
+          <Text underline="true">認定日   ${date}</Text>
+        </GridCell>
+        <GridCell col="1">
+          <Text underline="true">認定の有効期間   ${date} 〜 ${date}</Text>
+        </GridCell>
+      </Grid>
+
+      <Spacer height="2" />
+      <Grid cols="44 *" rows="8" borderThickness="0.7">
+        <GridCell valign="center">
+          <Text align="center">要介護状態区分</Text>
+        </GridCell>
+        <GridCell col="1" valign="center">
+          <StackBlock height="10">
+            <Ellipse height="7" width="20" x="4" y="2" hidden="${!isYokaigodo1}" />
+            <Ellipse height="7" width="20" x="26" y="2" hidden="${!isYokaigodo2}" />
+            <Ellipse height="7" width="20" x="50" y="2" hidden="${!isYokaigodo3}" />
+            <Ellipse height="7" width="20" x="76" y="2" hidden="${!isYokaigodo4}" />
+            <Ellipse height="7" width="22" x="98" y="2" hidden="${!isYokaigodo5}" />
+            <Text width="200" x="7" y="3">要介護1 ・　要介護2 ・　要介護3　・　要介護4 ・　要介護5</Text>
+          </StackBlock>
+        </GridCell>
+      </Grid>
+
+      <Spacer height="2" />
+      <Grid cols="50 *" borderThickness="0.7">
+        <GridCell valign="center" padding="2">
+          <Text align="center">利用者及び家族の生活に対する意向を踏まえた課題分析の結果</Text>
+        </GridCell>
+        <GridCell col="1" padding="1">
+          <Text>${longText}</Text>
+        </GridCell>
+      </Grid>
+
+      <Spacer height="2" />
+      <Grid cols="50 *" borderThickness="0.7">
+        <GridCell valign="center" padding="2">
+          <Text align="center">介護認定審査会の意見及びサービスの種類の指定</Text>
+        </GridCell>
+        <GridCell col="1" padding="1">
+          <Text>${longText}</Text>
+        </GridCell>
+      </Grid>
+
+      <Spacer height="2" />
+      <Grid cols="50 *" borderThickness="0.7">
+        <GridCell valign="center" padding="2">
+          <Text align="center">総合的な援助の方針</Text>
+        </GridCell>
+        <GridCell col="1" padding="1">
+          <Text>${test.test.test} ${longText}</Text>
+        </GridCell>
+      </Grid>
+
+      <Spacer height="2" />
+      <Grid cols="50 *" borderThickness="0.7">
+        <GridCell valign="center" padding="2">
+          <Text align="center">生活援助中心型の算定理由</Text>
+        </GridCell>
+        <GridCell col="1" padding="1">
+          <Text>
+            1. 1人ぐらし  2. 家族などが障害、疾病等 3. その他（${otherText}）
+          </Text>
+        </GridCell>
+      </Grid>
+
+    </LayoutBody>
+  </LinearLayout>
+</LayoutXml>

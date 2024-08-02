@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<script src="https://cdn.jsdelivr.net/npm/yagisan-reports@latest/umd.js" defer></script>
+<script type="module">
+const buttonEl = document.getElementById('generateButton');
+
+// CDN版を使う場合は依存モジュールのURL設定が必要です
+YagisanReports.globalOptions.workerUrl = 'https://cdn.jsdelivr.net/npm/yagisan-reports@latest/reportworker.js';
+YagisanReports.globalOptions.fontUrl = 'https://cdn.jsdelivr.net/npm/yagisan-reports@latest/';
+
+buttonEl.addEventListener('click', async ev => {
+    buttonEl.disabled = true;
+
+    // 帳票テンプレートファイルのダウンロード
+    const yrtUrl = 'https://preview.yagisan-reports-docs.pages.dev/developer-guide/v1.0/_attachments/quickstart/sample.yrt';
+    const yrt = await fetch(yrtUrl).then(res => res.arrayBuffer());
+
+    // 帳票エンジンのセットアップ
+    const engine = YagisanReports.createEngine();
+    const tempalte = await engine.loadTemplate(yrt);
+    const generator = await tempalte.createPdfReportGenerator();
+
+    // 帳票の生成
+    const report = await generator.generate({
+        message: 'hello!\nyagisan-reports!!'
+    });
+    const pdf = await report.getContent();
+
+    // 生成したPDFのダウンロード
+    download('hello.pdf', pdf);
+
+    // 帳票エンジンの破棄
+    generator.dispose();
+    tempalte.dispose();
+    engine.dispose();
+
+    buttonEl.disabled = false;
+});
+
+function download(filename, buff) {
+    const blob = new Blob([buff], {type: 'application/pdf'});
+    const blobUrl = URL.createObjectURL(blob);
+
+    const anchor = document.createElement('a');
+    anchor.download = filename;
+    anchor.href = blobUrl;
+
+    document.body.appendChild(anchor);
+    anchor.click();
+
+    anchor.remove();
+    URL.revokeObjectURL(blobUrl);
+}
+</script>
+</head>
+<body>
+<button id="generateButton">帳票を生成して保存</button>
+</body>
+</html>
