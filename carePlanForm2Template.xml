@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LayoutXml>
+  <LinearLayout size="A4" orientation="horizontal" margin="20">
+    <LayoutBody>
+      <Grid cols="90 110 *" rows="auto">
+        <GridCell>
+          <Grid rows="10" cols="20" borderThickness="0.7">
+            <GridCell valign="center"><Text align="center">第2表</Text></GridCell>
+          </Grid>
+        </GridCell>
+        <GridCell row="0" col="1">
+          <Text size="20" bold="true">居宅サービス計画書（2）</Text>
+        </GridCell>
+        <GridCell row="0" col="2" valign="bottom">
+          <Text>作成年月日  ${date}</Text>
+        </GridCell>
+      </Grid>
+
+      <Spacer height="8" />
+      <Grid cols="70 60 *" rows="auto">
+        <GridCell>
+          <Text align="right" underline="true">利用者様     ${careReceiverName} 殿</Text>
+        </GridCell>
+        <GridCell col="1"></GridCell>
+        <GridCell col="2">
+          <Text>※1 「保険給付対象か否かの区分」について、保険給付対象内サービスにていては○印を付す。</Text>
+          <Text>※2 「当該サービス提供を行う事業所」について記入する。</Text>
+        </GridCell>
+      </Grid>
+
+      <Spacer height="4" />
+
+      <Grid cols="40 25 20 25 20 36 10 30 20 15 15.5" rows="8 8" borderThickness="0.1" backgroundColor="#E6E6E6">
+        <GridCell rowspan="2" padding="2" valign="center">
+          <Text align="center">生活全般の解決すべき課題（ニーズ）</Text>
+        </GridCell>
+        <GridCell col="1" row="0" colspan="4" padding="2">
+          <Text align="center">目標</Text>
+        </GridCell>
+        <GridCell col="5" row="0" colspan="6" padding="2">
+          <Text align="center">援助内容</Text>
+        </GridCell>
+        <GridCell col="1" row="1" padding="2">
+          <Text align="center">長期目標</Text>
+        </GridCell>
+        <GridCell col="2" row="1" padding="2">
+          <Text align="center">（期間）</Text>
+        </GridCell>
+        <GridCell col="3" row="1" padding="2">
+          <Text align="center">短期目標</Text>
+        </GridCell>
+        <GridCell col="4" row="1" padding="2">
+          <Text align="center">（期間）</Text>
+        </GridCell>
+        <GridCell col="5" row="1" padding="2">
+          <Text align="center">サービス内容</Text>
+        </GridCell>
+        <GridCell col="6" row="1" padding="2">
+          <Text align="center">※1</Text>
+        </GridCell>
+        <GridCell col="7" row="1" padding="2">
+          <Text align="center">サービス種別</Text>
+        </GridCell>
+        <GridCell col="8" row="1" padding="2">
+          <Text align="center">※2</Text>
+        </GridCell>
+        <GridCell col="9" row="1" padding="2">
+          <Text align="center">頻度</Text>
+        </GridCell>
+        <GridCell col="10" row="1" padding="2">
+          <Text align="center">期間</Text>
+        </GridCell>
+      </Grid>
+
+      <Table items="${lifeProblemList}" outerBorderThickness="0.1">
+        <TableColumn width="40">
+          <TableColumnTemplate padding="2">
+            <Text>${content}</Text>
+          </TableColumnTemplate>
+        </TableColumn>
+        <TableColumn width="auto">
+          <TableColumnTemplate>
+            <Table items="${longTermGoalList}" outerBorderThickness="0 0 0.1 0">
+              <TableColumn width="25">
+                <TableColumnTemplate padding="2"><Text>${content}</Text></TableColumnTemplate>
+              </TableColumn>
+              <TableColumn width="20">
+                <TableColumnTemplate padding="2"><Text>${period}</Text></TableColumnTemplate>
+              </TableColumn>
+              <TableColumn width="auto">
+                <TableColumnTemplate>
+                  <Table items="${shortTermGoalList}" outerBorderThickness="0 0 0.1 0" rowHeight="auto">
+                    <TableColumn width="25">
+                      <TableColumnTemplate padding="2"><Text>${content}</Text></TableColumnTemplate>
+                    </TableColumn>
+                    <TableColumn width="19.5">
+                      <TableColumnTemplate padding="2"><Text>${period}</Text></TableColumnTemplate>
+                    </TableColumn>
+                    <TableColumn width="auto">
+                      <TableColumnTemplate>
+                        <Table items="${serviceContentList}" outerBorderThickness="0 0 0.1 0">
+                          <TableColumn width="36">
+                            <TableColumnTemplate padding="2"><Text>${content}</Text></TableColumnTemplate>
+                          </TableColumn>
+                          <TableColumn width="auto">
+                            <TableColumnTemplate>
+                              <Table items="${serviceTypeList}" outerBorderThickness="0 0 0.1 0">
+                                <TableColumn width="10">
+                                  <TableColumnTemplate padding="2"><Ellipse width="5" height="5" hidden="${!insuranceTarget}" /></TableColumnTemplate>
+                                </TableColumn>
+                                <TableColumn width="30">
+                                  <TableColumnTemplate padding="2"><Text >${serviceName}</Text></TableColumnTemplate>
+                                </TableColumn>
+                                <TableColumn width="auto">
+                                  <TableColumnTemplate>
+                                    <Table items="${serviceProviderList}" outerBorderThickness="0 0 0.1 0">
+                                      <TableColumn width="20">
+                                        <TableColumnTemplate padding="2"><Text>${serviceProviderName}</Text></TableColumnTemplate>
+                                      </TableColumn>
+                                      <TableColumn width="15">
+                                        <TableColumnTemplate padding="2"><Text>${frequency}</Text></TableColumnTemplate>
+                                      </TableColumn>
+                                      <TableColumn width="15">
+                                        <TableColumnTemplate padding="2"><Text>${period}</Text></TableColumnTemplate>
+                                      </TableColumn>
+                                    </Table>
+                                  </TableColumnTemplate>
+                                </TableColumn>
+                              </Table>
+                            </TableColumnTemplate>
+                          </TableColumn>
+                        </Table>
+                      </TableColumnTemplate>
+                    </TableColumn>
+                  </Table>
+                </TableColumnTemplate>
+              </TableColumn>
+            </Table>
+          </TableColumnTemplate>
+        </TableColumn>
+      </Table>
+
+    </LayoutBody>
+  </LinearLayout>
+</LayoutXml>
