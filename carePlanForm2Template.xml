@@ -31,43 +31,43 @@
       <Spacer height="4" />
 
       <Grid cols="40 25 20 25 20 36 10 30 20 15 15.5" rows="8 8" borderThickness="0.1" backgroundColor="#E6E6E6">
-        <GridCell rowspan="2" padding="2" valign="center">
+        <GridCell rowspan="2" padding="1.8" valign="center">
           <Text align="center">生活全般の解決すべき課題（ニーズ）</Text>
         </GridCell>
-        <GridCell col="1" row="0" colspan="4" padding="2">
+        <GridCell col="1" row="0" colspan="4" padding="1.8">
           <Text align="center">目標</Text>
         </GridCell>
-        <GridCell col="5" row="0" colspan="6" padding="2">
+        <GridCell col="5" row="0" colspan="6" padding="1.8">
           <Text align="center">援助内容</Text>
         </GridCell>
-        <GridCell col="1" row="1" padding="2">
+        <GridCell col="1" row="1" padding="1.8">
           <Text align="center">長期目標</Text>
         </GridCell>
-        <GridCell col="2" row="1" padding="2">
+        <GridCell col="2" row="1" padding="1.8">
           <Text align="center">（期間）</Text>
         </GridCell>
-        <GridCell col="3" row="1" padding="2">
+        <GridCell col="3" row="1" padding="1.8">
           <Text align="center">短期目標</Text>
         </GridCell>
-        <GridCell col="4" row="1" padding="2">
+        <GridCell col="4" row="1" padding="1.8">
           <Text align="center">（期間）</Text>
         </GridCell>
-        <GridCell col="5" row="1" padding="2">
+        <GridCell col="5" row="1" padding="1.8">
           <Text align="center">サービス内容</Text>
         </GridCell>
-        <GridCell col="6" row="1" padding="2">
+        <GridCell col="6" row="1" padding="1.8">
           <Text align="center">※1</Text>
         </GridCell>
-        <GridCell col="7" row="1" padding="2">
+        <GridCell col="7" row="1" padding="1.8">
           <Text align="center">サービス種別</Text>
         </GridCell>
-        <GridCell col="8" row="1" padding="2">
+        <GridCell col="8" row="1" padding="1.8">
           <Text align="center">※2</Text>
         </GridCell>
-        <GridCell col="9" row="1" padding="2">
+        <GridCell col="9" row="1" padding="1.8">
           <Text align="center">頻度</Text>
         </GridCell>
-        <GridCell col="10" row="1" padding="2">
+        <GridCell col="10" row="1" padding="1.8">
           <Text align="center">期間</Text>
         </GridCell>
       </Grid>
