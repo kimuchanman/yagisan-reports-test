@@ -102,8 +102,8 @@
         <GridCell valign="center" padding="2">
           <Text align="center">利用者及び家族の生活に対する意向を踏まえた課題分析の結果</Text>
         </GridCell>
-        <GridCell col="1" padding="1">
-          <Text>${longText}</Text>
+        <GridCell col="1" padding="1" valign="center">
+          <Text align="left">${bunsekiNoKekka}</Text>
         </GridCell>
       </Grid>
 
@@ -112,8 +112,8 @@
         <GridCell valign="center" padding="2">
           <Text align="center">介護認定審査会の意見及びサービスの種類の指定</Text>
         </GridCell>
-        <GridCell col="1" padding="1">
-          <Text>${longText}</Text>
+        <GridCell col="1" padding="1" valign="center">
+          <Text align="left">${ikenOyobiShitei}</Text>
         </GridCell>
       </Grid>
 
@@ -122,8 +122,8 @@
         <GridCell valign="center" padding="2">
           <Text align="center">総合的な援助の方針</Text>
         </GridCell>
-        <GridCell col="1" padding="1">
-          <Text>${test.test.test} ${longText}</Text>
+        <GridCell col="1" padding="1" valign="center">
+          <Text align="left">${enjoNoHoushin}</Text>
         </GridCell>
       </Grid>
 
@@ -133,9 +133,14 @@
           <Text align="center">生活援助中心型の算定理由</Text>
         </GridCell>
         <GridCell col="1" padding="1">
-          <Text>
-            1. 1人ぐらし  2. 家族などが障害、疾病等 3. その他（${otherText}）
-          </Text>
+          <StackBlock height="10">
+            <Ellipse height="7" width="7" x="0.5" y="2" hidden="${!isHitorigurashi}" />
+            <Ellipse height="7" width="7" x="28" y="2" hidden="${!isKazokuNadogaShougai}" />
+            <Ellipse height="7" width="7" x="79" y="2" hidden="${!isOther}" />
+            <Text width="200" x="3" y="3">1. 1人ぐらし  2. 家族などが障害、疾病等 3. その他（</Text>
+            <Text width="98" x="102" y="3">${otherText}</Text>
+            <Text width="2" x="200" y="3">)</Text>
+          </StackBlock>
         </GridCell>
       </Grid>
 
