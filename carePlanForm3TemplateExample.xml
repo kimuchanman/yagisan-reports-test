@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LayoutXml>
+  <LinearLayout size="A4" orientation="horizontal" margin="20">
+    <LayoutBody>
+      <Grid cols="90 110 *" rows="auto">
+        <GridCell>
+          <Grid rows="10" cols="20" borderThickness="0.7">
+            <GridCell valign="center"><Text align="center">第3表</Text></GridCell>
+          </Grid>
+        </GridCell>
+        <GridCell row="0" col="1">
+          <Text size="20" bold="true">週間サービス計画表</Text>
+        </GridCell>
+        <GridCell row="0" col="2" valign="bottom">
+          <Text>作成年月日  ${date}</Text>
+        </GridCell>
+      </Grid>
+
+      <Spacer height="8" />
+      <Grid cols="70" rows="10">
+        <GridCell>
+          <Text align="right" underline="true">利用者様     ${careReceiverName} 殿</Text>
+        </GridCell>
+      </Grid>
+
+      <StackBlock height="130">
+        <!-- もう表は静的なので asset から画像を利用する -->
+        <Image width="255" height="130" src="@{form3View}"></Image>
+
+        <!-- アイテムのポジションの計算は注入側でやること。テンプレートは計算済みのデータを扱う -->
+        <!-- 基準点(月曜の0:00の左上のポイント) x="29.5" y="5.1" -->
+        <!-- 1時間は height=4.8 になる。1枠の width=25.5 -->
+        <LinearBlock width="25.5" height="4.8" x="29.5" y="5.1" backgroundColor="yellow" borderThickness="0.1">
+          <Text>サービス名 サービス詳細</Text>
+        </LinearBlock>
+
+        <!-- 枠線分もあるので、1枠右に移動するときは (25.5+0.27) 移動する。1枠下に移動するときは (4.8+0.017) 移動する -->
+        <LinearBlock width="25.5" height="4.8" x="132.58" y="86.989" backgroundColor="yellow" borderThickness="0.1">
+          <Text>サービス名 サービス詳細</Text>
+        </LinearBlock>
+
+        <!-- x: 29.5+(25.5+0.27)*6=184.12 / y: 5.1+(4.8+0.017)*23=115.891 -->
+        <LinearBlock width="25.5" height="4.8" x="184.12" y="115.891" backgroundColor="yellow" borderThickness="0.1">
+          <Text>サービス名 サービス詳細</Text>
+        </LinearBlock>
+
+        <!-- 予定が重なるパターン -->
+        <!-- width: (25.5/2)-0.1=12.65 border line分の 0.1 を調整している -->
+        <LinearBlock width="12.65" height="4.8" x="158.35" y="58.087" backgroundColor="yellow" borderThickness="0.1">
+          <Text>サービス名 サービス詳細</Text>
+        </LinearBlock>
+        <!-- x: 158.35+25.5/2 -->
+        <LinearBlock width="12.65" height="4.8" x="171.1" y="58.087" backgroundColor="yellow" borderThickness="0.1">
+          <Text>サービス名 サービス詳細</Text>
+        </LinearBlock>
+
+        <!-- 日常生活のエリア -->
+        <!-- 基準点 x: 209.89 y: 5.1 -->
+        <!-- 横幅は 44.4 -->
+        <LinearBlock width="44.4" height="4.8" x="209.89" y="5.1" backgroundColor="yellow" borderThickness="0.1">
+          <Text>サービス名 サービス詳細</Text>
+        </LinearBlock>
+
+        <!-- x: 209.89 / y: 5.1+(4.8+0.017)*23=115.891 -->
+        <LinearBlock width="44.4" height="4.8" x="209.89" y="115.891" backgroundColor="yellow" borderThickness="0.1">
+          <Text>サービス名 サービス詳細</Text>
+        </LinearBlock>
+
+        <!-- 予定が重なるパターン -->
+        <!-- width: (44.4/2)-0.1=22.1 -->
+        <LinearBlock width="22.1" height="4.8" x="209.89" y="58.087" backgroundColor="yellow" borderThickness="0.1">
+          <Text>サービス名 サービス詳細</Text>
+        </LinearBlock>
+        <!-- x: 209.89+44.4/2 -->
+        <LinearBlock width="22.1" height="4.8" x="232.09" y="58.087" backgroundColor="yellow" borderThickness="0.1">
+          <Text>サービス名 サービス詳細</Text>
+        </LinearBlock>
+      </StackBlock>
+
+      <Grid cols="50 *" borderThickness="0.7">
+        <GridCell valign="center" padding="2">
+          <Text align="center">週単位以外のサービス</Text>
+        </GridCell>
+        <GridCell col="1" padding="1" valign="center">
+          <Text>内容</Text>
+        </GridCell>
+      </Grid>
+    </LayoutBody>
+  </LinearLayout>
+</LayoutXml>
