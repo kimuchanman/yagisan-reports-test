@@ -1,0 +1,23 @@
+{
+    "date": "2022年10月1日",
+    "careReceiverName": "かいぽけはなこ",
+    "isShokai": false,
+    "isShoukai": true,
+    "isKeizoku": false,
+    "isNinteizumi": false,
+    "isShinseityu": true,
+    "address": "愛知県名古屋市中区千代田2-24-34 神喜ビル203 めちゃながaddress3",
+    "creatorName": "作成者だよー",
+    "isYokaigodo1": false,
+    "isYokaigodo2": false,
+    "isYokaigodo3": true,
+    "isYokaigodo4": false,
+    "isYokaigodo5": false,
+    "bunsekiNoKekka": "利用者及び家族の生活に対する意向を踏まえた課題分析の結果",
+    "ikenOyobiShitei": "介護認定審査会の意見及びサービスの種類の指定",
+    "enjoNoHoushin": "総合的な援助の方針",
+    "isHitorigurashi": false,
+    "isKazokuNadogaShougai": false,
+    "isOther": true,
+    "otherText": "その他の内容〜〜〜〜〜〜"
+}

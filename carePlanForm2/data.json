@@ -1,0 +1,126 @@
+{
+  "date": "2022年10月1日",
+  "careReceiverName": "かいぽけはなこ",
+  "lifeProblemList": [
+    {
+      "content": "薬の飲み忘れがなくなり、生活の不安が減らせる",
+      "longTermGoalList": [
+        {
+          "content": "飲み忘れがなくなり、高血圧の症状が改善されている",
+          "period": "H30/4/1〜H31/2/28",
+          "shortTermGoalList": [
+            {
+              "content": "毎日の服薬状況を見えるようにし、管理する",
+              "period": "H30/4/1〜H30/9/30",
+              "serviceContentList": [
+                {
+                  "content": "服薬確認の声がけとおくするカレンダーの管理を一緒にする",
+                  "serviceTypeList": [
+                    {
+                      "serviceName": "訪問介護",
+                      "insuranceTarget": true,
+                      "serviceProviderList": [
+                        {
+                          "serviceProviderName": "腹八分目ホームヘルプサービス",
+                          "frequency": "週に1回",
+                          "period": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "content": "１１１",
+          "period": "R6/7/1〜R6/7/31",
+          "shortTermGoalList": []
+        }
+      ]
+    },
+    {
+      "content": "栄養バランスの整った食事を摂ることができる",
+      "longTermGoalList": [
+        {
+          "content": "夫と一緒に栄養バランスの整った食事を用意し、食べることができている",
+          "period": "H30/4/1〜H31/2/28",
+          "shortTermGoalList": [
+            {
+              "content": "食材の確認をし、塩分を控えた食事のメニューを考える",
+              "period": "H30/4/1〜H30/9/30",
+              "serviceContentList": [
+                {
+                  "content": "食材の確認をし、一緒に調理を行う",
+                  "serviceTypeList": [
+                    {
+                      "serviceName": "訪問介護",
+                      "insuranceTarget": true,
+                      "serviceProviderList": [
+                        {
+                          "serviceProviderName": "腹八分目ホームヘルプサービス",
+                          "frequency": "週に1回",
+                          "period": ""
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "content": "必要な食材の購入をする",
+                  "serviceTypeList": [
+                    {
+                      "serviceName": "家族（夫）の支援",
+                      "insuranceTarget": false,
+                      "serviceProviderList": [
+                        {
+                          "serviceProviderName": "",
+                          "frequency": "週に1回",
+                          "period": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "content": "安全な外出の機会を通し、社会との関係性維持、体力維持をする",
+      "longTermGoalList": [
+        {
+          "content": "定期的に近所の大型商業施設へ日用品を買いに行けるようになっている",
+          "period": "H30/4/1〜H31/2/28",
+          "shortTermGoalList": [
+            {
+              "content": "定期的に外出できるようになり、体力維持のための活動をおこなっている",
+              "period": "H30/4/1〜H30/9/30",
+              "serviceContentList": [
+                {
+                  "content": "下肢筋力維持のために継続した運動のサポート",
+                  "serviceTypeList": [
+                    {
+                      "serviceName": "通所介護",
+                      "insuranceTarget": true,
+                      "serviceProviderList": [
+                        {
+                          "serviceProviderName": "メディカルビューティデイサービス",
+                          "frequency": "週に1回",
+                          "period": ""
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LayoutXml>
+  <LinearLayout size="A4" orientation="horizontal" margin="20">
+    <LayoutBody>
+      <Grid cols="90 110 *" rows="auto">
+        <GridCell>
+          <Grid rows="10" cols="20" borderThickness="0.7">
+            <GridCell valign="center"><Text align="center">第3表</Text></GridCell>
+          </Grid>
+        </GridCell>
+        <GridCell row="0" col="1">
+          <Text size="20" bold="true">週間サービス計画表</Text>
+        </GridCell>
+        <GridCell row="0" col="2" valign="bottom">
+          <Text>作成年月日  ${date}</Text>
+        </GridCell>
+      </Grid>
+
+      <Spacer height="8" />
+      <Grid cols="70" rows="10">
+        <GridCell>
+          <Text align="right" underline="true">利用者様     ${careReceiverName} 殿</Text>
+        </GridCell>
+      </Grid>
+
+      <StackBlock height="130">
+        <Image width="255" height="130" src="@{form3View}"></Image>
+
+        <StackBlock width="255" height="130" x="0" y="0" foreach="${events}">
+          <!-- TODO: height 属性を動的に -->
+          <LinearBlock width="${width}" x="${x}" y="${y}" backgroundColor="yellow" borderThickness="0.1">
+            <Text>${height}</Text>
+          </LinearBlock>
+        </StackBlock>
+      </StackBlock>
+
+      <Grid cols="50 *" borderThickness="0.7">
+        <GridCell valign="center" padding="2">
+          <Text align="center">週単位以外のサービス</Text>
+        </GridCell>
+        <GridCell col="1" padding="1" valign="center">
+          <Text>内容</Text>
+        </GridCell>
+      </Grid>
+    </LayoutBody>
+  </LinearLayout>
+</LayoutXml>
