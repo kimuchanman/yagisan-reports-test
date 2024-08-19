@@ -27,50 +27,50 @@
         <Image width="255" height="130" src="@{form3View}"></Image>
 
         <StackBlock width="25.5" height="130" x="29.5" y="5.1" foreach="${mondayEvents}">
-          <LinearBlock width="25.5" x="0" y="${y}" backgroundColor="yellow" borderThickness="0.1" padding="0.25">
-            <Text>${content}</Text>
+          <LinearBlock width="25.5" x="0" y="${y}" backgroundColor="yellow" borderThickness="0.1">
+            <Text size="11.3">${content}</Text>
           </LinearBlock>
         </StackBlock>
 
         <StackBlock width="25.5" height="130" x="55.1" y="5.1" foreach="${tuesdayEvents}">
-          <LinearBlock width="25.5" x="0" y="${y}" backgroundColor="yellow" borderThickness="0.1" padding="0.25">
-            <Text>${content}</Text>
+          <LinearBlock width="25.5" x="0" y="${y}" backgroundColor="yellow" borderThickness="0.1">
+            <Text size="11.3">${content}</Text>
           </LinearBlock>
         </StackBlock>
 
         <StackBlock width="25.5" height="130" x="80.9" y="5.1" foreach="${wednesdayEvents}">
-          <LinearBlock width="25.5" x="0" y="${y}" backgroundColor="yellow" borderThickness="0.1" padding="0.25">
-            <Text>${content}</Text>
+          <LinearBlock width="25.5" x="0" y="${y}" backgroundColor="yellow" borderThickness="0.1">
+            <Text size="11.3">${content}</Text>
           </LinearBlock>
         </StackBlock>
 
         <StackBlock width="25.5" height="130" x="106.7" y="5.1" foreach="${thursdayEvents}">
-          <LinearBlock width="25.5" x="0" y="${y}" backgroundColor="yellow" borderThickness="0.1" padding="0.25">
-            <Text>${content}</Text>
+          <LinearBlock width="25.5" x="0" y="${y}" backgroundColor="yellow" borderThickness="0.1">
+            <Text size="11.3">${content}</Text>
           </LinearBlock>
         </StackBlock>
 
         <StackBlock width="25.5" height="130" x="132.3" y="5.1" foreach="${fridayEvents}">
-          <LinearBlock width="25.5" x="0" y="${y}" backgroundColor="yellow" borderThickness="0.1" padding="0.25">
-            <Text>${content}</Text>
+          <LinearBlock width="25.5" x="0" y="${y}" backgroundColor="yellow" borderThickness="0.1">
+            <Text size="11.3">${content}</Text>
           </LinearBlock>
         </StackBlock>
 
         <StackBlock width="25.5" height="130" x="158" y="5.1" foreach="${saturdayEvents}">
-          <LinearBlock width="25.5" x="0" y="${y}" backgroundColor="yellow" borderThickness="0.1" padding="0.25">
-            <Text>${content}</Text>
+          <LinearBlock width="25.5" x="0" y="${y}" backgroundColor="yellow" borderThickness="0.1">
+            <Text size="11.3">${content}</Text>
           </LinearBlock>
         </StackBlock>
 
         <StackBlock width="25.5" height="130" x="183.8" y="5.1" foreach="${sundayEvents}">
-          <LinearBlock width="25.5" x="0" y="${y}" backgroundColor="yellow" borderThickness="0.1" padding="0.25">
-            <Text>${content}</Text>
+          <LinearBlock width="25.5" x="0" y="${y}" backgroundColor="yellow" borderThickness="0.1">
+            <Text size="11.3">${content}</Text>
           </LinearBlock>
         </StackBlock>
 
         <StackBlock width="44.5" height="130" x="209.7" y="5.1" foreach="${nichijoseikatsuEvents}">
-          <LinearBlock width="44.5" x="0" y="${y}" backgroundColor="yellow" borderThickness="0.1" padding="0.25">
-            <Text>${content}</Text>
+          <LinearBlock width="44.5" x="0" y="${y}" backgroundColor="yellow" borderThickness="0.1">
+            <Text size="11.3">${content}</Text>
           </LinearBlock>
         </StackBlock>
 
