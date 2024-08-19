@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LayoutXml>
+  <LinearLayout size="A4" orientation="horizontal" margin="20">
+    <LayoutBody>
+      <Grid cols="90 110 *" rows="auto">
+        <GridCell>
+          <Grid rows="10" cols="20" borderThickness="0.7">
+            <GridCell valign="center"><Text align="center">第3表</Text></GridCell>
+          </Grid>
+        </GridCell>
+        <GridCell row="0" col="1">
+          <Text size="20" bold="true">週間サービス計画表</Text>
+        </GridCell>
+        <GridCell row="0" col="2" valign="bottom">
+          <Text>作成年月日  ${date}</Text>
+        </GridCell>
+      </Grid>
+
+      <Spacer height="8" />
+      <Grid cols="70" rows="10">
+        <GridCell>
+          <Text align="left" underline="true">利用者様     ${careReceiverName} 殿</Text>
+        </GridCell>
+      </Grid>
+
+      <Spacer height="3" />
+
+      <StackBlock height="122">
+        <Grid cols="10.25 10.25 10.25 10.25 10.25 10.25 10.25 10.25 10.25 10.25 10.25 10.25 10.25 10.25 10.25 10.25 10.25 10.25 10.25 10.25 10.25 10.25 10.25 10.25 10.25" rows="8 8 11 11 11 11 11 11 11 28" borderThickness="0.1" width="250">
+          <GridCell></GridCell>
+          <GridCell col="1" row="0" colspan="6" padding="1" valign="center">
+            <Text align="center">深夜</Text>
+          </GridCell>
+          <GridCell col="7" row="0" colspan="2" padding="1" valign="center">
+            <Text align="center">早朝</Text>
+          </GridCell>
+          <GridCell col="9" row="0" colspan="4" padding="1" valign="center">
+            <Text align="center">午前</Text>
+          </GridCell>
+          <GridCell col="13" row="0" colspan="6" padding="1" valign="center">
+            <Text align="center">午後</Text>
+          </GridCell>
+          <GridCell col="19" row="0" colspan="4" padding="1" valign="center">
+            <Text align="center">夜間</Text>
+          </GridCell>
+          <GridCell col="23" row="0" colspan="2" padding="1" valign="center">
+            <Text align="center">深夜</Text>
+          </GridCell>
+
+          <GridCell col="0" row="1" colspan="25">
+            <StackBlock height="10.25">
+              <Text width="10.25" height="10.25" x="8" y="3">0時</Text>
+              <Text width="10.25" height="10.25" x="28.3" y="3">2時</Text>
+              <Text width="10.25" height="10.25" x="48.6" y="3">4時</Text>
+              <Text width="10.25" height="10.25" x="68.9" y="3">6時</Text>
+              <Text width="10.25" height="10.25" x="89.2" y="3">8時</Text>
+              <Text width="10.25" height="10.25" x="109.5" y="3">10時</Text>
+              <Text width="10.25" height="10.25" x="129.8" y="3">12時</Text>
+              <Text width="10.25" height="10.25" x="150.1" y="3">14時</Text>
+              <Text width="10.25" height="10.25" x="170.4" y="3">16時</Text>
+              <Text width="10.25" height="10.25" x="190.7" y="3">18時</Text>
+              <Text width="10.25" height="10.25" x="211.0" y="3">20時</Text>
+              <Text width="10.25" height="10.25" x="231.3" y="3">22時</Text>
+              <Text width="10.25" height="10.25" x="247.6" y="3">24時</Text>
+            </StackBlock>
+          </GridCell>
+
+          <GridCell col="0" row="2" valign="center">
+            <Text align="center">月</Text>
+          </GridCell>
+          <GridCell col="0" row="3" valign="center">
+            <Text align="center">火</Text>
+          </GridCell>
+          <GridCell col="0" row="4" valign="center">
+            <Text align="center">水</Text>
+          </GridCell>
+          <GridCell col="0" row="5" valign="center">
+            <Text align="center">木</Text>
+          </GridCell>
+          <GridCell col="0" row="6" valign="center">
+            <Text align="center">金</Text>
+          </GridCell>
+          <GridCell col="0" row="7" valign="center">
+            <Text align="center">土</Text>
+          </GridCell>
+          <GridCell col="0" row="8" valign="center">
+            <Text align="center">日</Text>
+          </GridCell>
+          <GridCell col="0" row="9" valign="center">
+            <Text align="center">主な日常生活上の活動</Text>
+          </GridCell>
+
+        </Grid>
+
+          <StackBlock height="11" width="246" x="10.25" y="16" foreach="${mondayEvents}">
+            <LinearBlock width="${width}" x="${x}" height="11" backgroundColor="yellow" borderThickness="0.1" padding="0.2">
+              <Text size="8">${content}</Text>
+            </LinearBlock>
+          </StackBlock>
+          <StackBlock height="11" width="246" x="10.25" y="27" foreach="${tuesdayEvents}">
+            <LinearBlock width="${width}" x="${x}" height="11" backgroundColor="yellow" borderThickness="0.1" padding="0.2">
+              <Text size="8">${content}</Text>
+            </LinearBlock>
+          </StackBlock>
+          <StackBlock height="11" width="246" x="10.25" y="38" foreach="${wednesdayEvents}">
+            <LinearBlock width="${width}" x="${x}" height="11" backgroundColor="yellow" borderThickness="0.1" padding="0.2">
+              <Text size="8">${content}</Text>
+            </LinearBlock>
+          </StackBlock>
+          <StackBlock height="11" width="246" x="10.25" y="49" foreach="${thursdayEvents}">
+            <LinearBlock width="${width}" x="${x}" height="11" backgroundColor="yellow" borderThickness="0.1" padding="0.2">
+              <Text size="8">${content}</Text>
+            </LinearBlock>
+          </StackBlock>
+          <StackBlock height="11" width="246" x="10.25" y="60" foreach="${fridayEvents}">
+            <LinearBlock width="${width}" x="${x}" height="11" backgroundColor="yellow" borderThickness="0.1" padding="0.2">
+              <Text size="8">${content}</Text>
+            </LinearBlock>
+          </StackBlock>
+          <StackBlock height="11" width="246" x="10.25" y="71" foreach="${saturdayEvents}">
+            <LinearBlock width="${width}" x="${x}" height="11" backgroundColor="yellow" borderThickness="0.1" padding="0.2">
+              <Text size="8">${content}</Text>
+            </LinearBlock>
+          </StackBlock>
+          <StackBlock height="11" width="246" x="10.25" y="82" foreach="${sundayEvents}">
+            <LinearBlock width="${width}" x="${x}" height="11" backgroundColor="yellow" borderThickness="0.1" padding="0.2">
+              <Text size="8">${content}</Text>
+            </LinearBlock>
+          </StackBlock>
+          <StackBlock height="28" width="246" x="10.25" y="93" foreach="${nichijoseikatsuEvents}">
+            <LinearBlock width="${width}" x="${x}" height="28" backgroundColor="yellow" borderThickness="0.1" padding="0.2">
+              <Text size="8">${content}</Text>
+            </LinearBlock>
+          </StackBlock>
+      </StackBlock>
+
+      <Spacer height="2" />
+
+      <Grid cols="50 *" borderThickness="0.1">
+        <GridCell valign="center" padding="1.5">
+          <Text align="center">週単位以外のサービス</Text>
+        </GridCell>
+        <GridCell col="1" padding="1" valign="center">
+          <Text>${otherServiceContent}</Text>
+        </GridCell>
+      </Grid>
+
+    </LayoutBody>
+  </LinearLayout>
+</LayoutXml>

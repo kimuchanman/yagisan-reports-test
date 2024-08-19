@@ -1,0 +1,141 @@
+{
+  "date": "2022年10月1日",
+  "careReceiverName": "John Doe",
+  "mondayEvents": [
+    {
+      "x": 0,
+      "width": 10.25,
+      "content": "サービス名\nサービス内容"
+    },
+    {
+      "x": 20.5,
+      "width": 20.5,
+      "content": "サービス名\nサービス内容"
+    },
+    {
+      "x": 235.75,
+      "width": 10.25,
+      "content": "サービス名\nサービス内容"
+    }
+  ],
+  "tuesdayEvents": [
+    {
+      "x": 0,
+      "width": 10.25,
+      "content": "サービス名\nサービス内容"
+    },
+    {
+      "x": 51.25,
+      "width": 20.5,
+      "content": "サービス名\nサービス内容"
+    },
+    {
+      "x": 235.75,
+      "width": 10.25,
+      "content": "サービス名\nサービス内容"
+    }
+  ],
+  "wednesdayEvents": [
+    {
+      "x": 0,
+      "width": 10.25,
+      "content": "サービス名\nサービス内容"
+    },
+    {
+      "x": 153.75,
+      "width": 20.5,
+      "content": "サービス名\nサービス内容"
+    },
+    {
+      "x": 235.75,
+      "width": 10.25,
+      "content": "サービス名\nサービス内容"
+    }
+  ],
+  "thursdayEvents": [
+    {
+      "x": 0,
+      "width": 10.25,
+      "content": "サービス名\nサービス内容"
+    },
+    {
+      "x": 82,
+      "width": 20.5,
+      "content": "サービス名\nサービス内容"
+    },
+    {
+      "x": 235.75,
+      "width": 10.25,
+      "content": "サービス名\nサービス内容"
+    }
+  ],
+  "fridayEvents": [
+    {
+      "x": 0,
+      "width": 10.25,
+      "content": "サービス名\nサービス内容"
+    },
+    {
+      "x": 215.25,
+      "width": 20.5,
+      "content": "サービス名\nサービス内容"
+    },
+    {
+      "x": 235.75,
+      "width": 10.25,
+      "content": "サービス名\nサービス内容"
+    }
+  ],
+  "saturdayEvents": [
+    {
+      "x": 0,
+      "width": 10.25,
+      "content": "サービス名\nサービス内容"
+    },
+    {
+      "x": 123,
+      "width": 20.5,
+      "content": "サービス名\nサービス内容"
+    },
+    {
+      "x": 235.75,
+      "width": 10.25,
+      "content": "サービス名\nサービス内容"
+    }
+  ],
+  "sundayEvents": [
+    {
+      "x": 0,
+      "width": 10.25,
+      "content": "サービス名\nサービス内容"
+    },
+    {
+      "x": 10.25,
+      "width": 20.5,
+      "content": "サービス名\nサービス内容"
+    },
+    {
+      "x": 235.75,
+      "width": 10.25,
+      "content": "サービス名\nサービス内容"
+    }
+  ],
+  "nichijoseikatsuEvents": [
+    {
+      "x": 0,
+      "width": 10.25,
+      "content": "サービス名\nサービス内容"
+    },
+    {
+      "x": 20.5,
+      "width": 20.5,
+      "content": "サービス名\nサービス内容"
+    },
+    {
+      "x": 235.75,
+      "width": 10.25,
+      "content": "サービス名\nサービス内容"
+    }
+  ],
+  "otherServiceContent": "第２・４月曜日、居宅療養管理指導/　福祉用具：ベッド/２か月に１回通院"
+}
