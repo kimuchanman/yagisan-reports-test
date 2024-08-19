@@ -1,0 +1,97 @@
+{
+  "careReceiverName": "John Doe",
+  "date": "2024年11月11日",
+  "mondayEvents": [
+    {
+      "y": 0,
+      "content": "サービス名\nサービス内容"
+    },
+    {
+      "y": 86.989,
+      "content": "サービス名\nサービス内容"
+    },
+    {
+      "y": 110.791,
+      "content": "サービス名"
+    }
+  ],
+  "tuesdayEvents": [
+    {
+      "y": 0,
+      "content": "サービス名\nサービス内容"
+    },
+    {
+      "y": 110.791,
+      "content": "サービス名"
+    }
+  ],
+ "wednesdayEvents": [
+    {
+      "y": 0,
+      "content": "サービス名\nサービス内容"
+    },
+    {
+      "y": 110.791,
+      "content": "サービス名"
+    }
+  ],
+ "thursdayEvents": [
+    {
+      "y": 0,
+      "content": "サービス名\nサービス内容"
+    },
+    {
+      "y": 48.17,
+      "content": "ながいサービス名\nながいサービス内容\n\n\n\n\n\n"
+    },
+    {
+      "y": 110.791,
+      "content": "サービス名"
+    }
+  ],
+ "fridayEvents": [
+    {
+      "y": 0,
+      "content": "サービス名\nサービス内容"
+    },
+    {
+      "y": 110.791,
+      "content": "サービス名"
+    }
+  ],
+ "saturdayEvents": [
+    {
+      "y": 0,
+      "content": "サービス名\nサービス内容"
+    },
+    {
+      "y": 33.719,
+      "content": "ながいサービ"
+    },
+    {
+      "y": 110.791,
+      "content": "サービス名"
+    }
+  ],
+ "sundayEvents": [
+    {
+      "y": 0,
+      "content": "サービス名\nサービス内容"
+    },
+    {
+      "y": 110.791,
+      "content": "サービス名"
+    }
+  ],
+ "nichijoseikatsuEvents": [
+    {
+      "y": 0,
+      "content": "サービス名\nサービス内容"
+    },
+    {
+      "y": 105.974,
+      "content": "サービス名\nサービス内容"
+    }
+  ],
+"otherServiceContent": "第２・４月曜日、居宅療養管理指導/　福祉用具：ベッド/２か月に１回通院"
+}

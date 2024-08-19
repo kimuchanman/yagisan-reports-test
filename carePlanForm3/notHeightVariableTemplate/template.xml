@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LayoutXml>
+  <LinearLayout size="A4" orientation="horizontal" margin="20">
+    <LayoutBody>
+      <Grid cols="90 110 *" rows="auto">
+        <GridCell>
+          <Grid rows="10" cols="20" borderThickness="0.7">
+            <GridCell valign="center"><Text align="center">第3表</Text></GridCell>
+          </Grid>
+        </GridCell>
+        <GridCell row="0" col="1">
+          <Text size="20" bold="true">週間サービス計画表</Text>
+        </GridCell>
+        <GridCell row="0" col="2" valign="bottom">
+          <Text>作成年月日  ${date}</Text>
+        </GridCell>
+      </Grid>
+
+      <Spacer height="8" />
+      <Grid cols="70" rows="10">
+        <GridCell>
+          <Text align="left" underline="true">利用者様     ${careReceiverName} 殿</Text>
+        </GridCell>
+      </Grid>
+
+      <StackBlock height="126">
+        <Image width="255" height="130" src="@{form3View}"></Image>
+
+        <StackBlock width="25.5" height="130" x="29.5" y="5.1" foreach="${mondayEvents}">
+          <LinearBlock width="25.5" x="0" y="${y}" backgroundColor="yellow" borderThickness="0.1">
+            <Text size="11.3">${content}</Text>
+          </LinearBlock>
+        </StackBlock>
+
+        <StackBlock width="25.5" height="130" x="55.1" y="5.1" foreach="${tuesdayEvents}">
+          <LinearBlock width="25.5" x="0" y="${y}" backgroundColor="yellow" borderThickness="0.1">
+            <Text size="11.3">${content}</Text>
+          </LinearBlock>
+        </StackBlock>
+
+        <StackBlock width="25.5" height="130" x="80.9" y="5.1" foreach="${wednesdayEvents}">
+          <LinearBlock width="25.5" x="0" y="${y}" backgroundColor="yellow" borderThickness="0.1">
+            <Text size="11.3">${content}</Text>
+          </LinearBlock>
+        </StackBlock>
+
+        <StackBlock width="25.5" height="130" x="106.7" y="5.1" foreach="${thursdayEvents}">
+          <LinearBlock width="25.5" x="0" y="${y}" backgroundColor="yellow" borderThickness="0.1">
+            <Text size="11.3">${content}</Text>
+          </LinearBlock>
+        </StackBlock>
+
+        <StackBlock width="25.5" height="130" x="132.3" y="5.1" foreach="${fridayEvents}">
+          <LinearBlock width="25.5" x="0" y="${y}" backgroundColor="yellow" borderThickness="0.1">
+            <Text size="11.3">${content}</Text>
+          </LinearBlock>
+        </StackBlock>
+
+        <StackBlock width="25.5" height="130" x="158" y="5.1" foreach="${saturdayEvents}">
+          <LinearBlock width="25.5" x="0" y="${y}" backgroundColor="yellow" borderThickness="0.1">
+            <Text size="11.3">${content}</Text>
+          </LinearBlock>
+        </StackBlock>
+
+        <StackBlock width="25.5" height="130" x="183.8" y="5.1" foreach="${sundayEvents}">
+          <LinearBlock width="25.5" x="0" y="${y}" backgroundColor="yellow" borderThickness="0.1">
+            <Text size="11.3">${content}</Text>
+          </LinearBlock>
+        </StackBlock>
+
+        <StackBlock width="44.5" height="130" x="209.7" y="5.1" foreach="${nichijoseikatsuEvents}">
+          <LinearBlock width="44.5" x="0" y="${y}" backgroundColor="yellow" borderThickness="0.1">
+            <Text size="11.3">${content}</Text>
+          </LinearBlock>
+        </StackBlock>
+
+      </StackBlock>
+
+      <Grid cols="50 *" borderThickness="0.7">
+        <GridCell valign="center" padding="2">
+          <Text align="center">週単位以外のサービス</Text>
+        </GridCell>
+        <GridCell col="1" padding="1" valign="center">
+          <Text>${otherServiceContent}</Text>
+        </GridCell>
+      </Grid>
+    </LayoutBody>
+  </LinearLayout>
+</LayoutXml>
