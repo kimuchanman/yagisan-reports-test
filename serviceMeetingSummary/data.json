@@ -1,0 +1,35 @@
+{
+    "careReceiverName": "John Doe",
+    "creatorName": "鈴木 一郎",
+    "createDate": "2024年11月11日",
+    "meetingDate": "2024年1月9日",
+    "meetingLocation": "地下闘技場",
+    "meetingPeriod": "12時24分",
+    "meetingCount": "3回",
+    "honninPresent": false,
+    "familyPresent": true,
+    "zokugara": "ぞくがら",
+    "bikou": "鼻がかゆい",
+    "meetingAttendees": [
+      {
+        "affiliationOrRelationship1": "affiliationOrRelationship1-1",
+        "name1": "name1-1",
+        "affiliationOrRelationship2": "affiliationOrRelationship2-1",
+        "name2": "name2-1",
+        "affiliationOrRelationship3": "affiliationOrRelationship3-1",
+        "name3": "name3-1"
+      },
+      {
+        "affiliationOrRelationship1": "affiliationOrRelationship1-2",
+        "name1": "name1-2",
+        "affiliationOrRelationship2": "affiliationOrRelationship2-2",
+        "name2": "name2-2",
+        "affiliationOrRelationship3": "affiliationOrRelationship3-2",
+        "name3": "name3-2"
+      }
+    ],
+    "consideredItem": "検討した項目〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜",
+    "consideredContent": "検討した内容〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜",
+    "conclusion": "結論〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜〜",
+    "remainingIssue": "remainingIssue"
+}

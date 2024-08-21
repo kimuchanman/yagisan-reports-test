@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LayoutXml>
+  <LinearLayout size="A4" orientation="horizontal" margin="20">
+    <LayoutBody>
+      <Grid cols="90 110 *" rows="auto">
+        <GridCell>
+          <Grid rows="10" cols="20" borderThickness="0.7">
+            <GridCell valign="center"><Text align="center">第4表</Text></GridCell>
+          </Grid>
+        </GridCell>
+        <GridCell row="0" col="1">
+          <Text size="20" bold="true">サービス担当者会議の要点</Text>
+        </GridCell>
+        <GridCell row="0" col="2" valign="bottom">
+          <Text>作成年月日  ${createDate}</Text>
+        </GridCell>
+      </Grid>
+
+      <Spacer height="8" />
+      <Grid cols="140 115" rows="10">
+        <GridCell>
+          <Text align="left" underline="true">利用者様     ${careReceiverName} 殿</Text>
+        </GridCell>
+        <GridCell col="1">
+          <Text align="right" underline="true">居宅サービス計画作成者（担当者）氏名     ${creatorName}</Text>
+        </GridCell>
+      </Grid>
+
+      <Grid cols="80 175">
+        <GridCell>
+          <Text align="left" underline="true">開催日     ${meetingDate}</Text>
+        </GridCell>
+        <GridCell col="1">
+          <Text align="right" underline="true">開催場所  ${meetingLocation}  開催時間  ${meetingPeriod}  開催回数  ${meetingCount}</Text>
+        </GridCell>
+      </Grid>
+
+      <Spacer height="7"></Spacer>
+
+      <Grid cols="45 40 30 40 30 40 30" rows="10 auto auto auto auto auto" borderThickness="0.7">
+        <GridCell rowspan="2" valign="top" padding="1">
+          <Text align="center" size="13">会議出席者</Text>
+          <Spacer height="1"></Spacer>
+          <Text align="center">利用者・家族の出席</Text>
+          <Text align="center" hidden="${honninPresent}">本人：【    】</Text>
+          <Text align="center" hidden="${!honninPresent}">本人：【 ○ 】</Text>
+          <Text align="center" hidden="${familyPresent}">家族：【  　】</Text>
+          <Text align="center" hidden="${!familyPresent}">家族：【 ○ 】</Text>
+          <Text align="center">（続柄： ${zokugara} ）</Text>
+          <Spacer height="2"></Spacer>
+          <Text align="left" size="10">※備考</Text>
+          <Text align="left" size="10">${bikou}</Text>
+        </GridCell>
+        <GridCell col="1" valign="center">
+          <Text align="center">所属（職種）</Text>
+        </GridCell>
+        <GridCell col="2" valign="center">
+          <Text align="center">氏名</Text>
+        </GridCell>
+        <GridCell col="3" valign="center">
+          <Text align="center">所属（職種）</Text>
+        </GridCell>
+        <GridCell col="4" valign="center">
+          <Text align="center">氏名</Text>
+        </GridCell>
+        <GridCell col="5" valign="center">
+          <Text align="center">所属（職種）</Text>
+        </GridCell>
+        <GridCell col="6" valign="center">
+          <Text align="center">氏名</Text>
+        </GridCell>
+
+        <GridCell col="1" row="1" colspan="6">
+
+          <Table items="${meetingAttendees}" rowHeight="15" minRows="3" borderThickness="0.7" outerBorderThickness="0">
+            <TableColumn width="39.7">
+              <TableColumnTemplate valign="center">
+                <Text align="center">${affiliationOrRelationship1}</Text>
+              </TableColumnTemplate>
+            </TableColumn>
+            <TableColumn width="30">
+              <TableColumnTemplate valign="center">
+                <Text align="center">${name1}</Text>
+              </TableColumnTemplate>
+            </TableColumn>
+            <TableColumn width="40">
+              <TableColumnTemplate valign="center">
+                <Text align="center">${affiliationOrRelationship2}</Text>
+              </TableColumnTemplate>
+            </TableColumn>
+            <TableColumn width="30">
+              <TableColumnTemplate valign="center">
+                <Text align="center">${name2}</Text>
+              </TableColumnTemplate>
+            </TableColumn>
+            <TableColumn width="40">
+              <TableColumnTemplate valign="center">
+                <Text align="center">${affiliationOrRelationship3}</Text>
+              </TableColumnTemplate>
+            </TableColumn>
+            <TableColumn width="30">
+              <TableColumnTemplate valign="center">
+                <Text align="center">${name3}</Text>
+              </TableColumnTemplate>
+            </TableColumn>
+          </Table>
+
+        </GridCell>
+
+        <GridCell col="0" row="2" valign="top" padding="1">
+          <Text align="center">検討した項目</Text>
+        </GridCell>
+        <GridCell col="1" row="2" colspan="6" padding="1">
+          <Text>${consideredItem}</Text>
+        </GridCell>
+
+        <GridCell col="0" row="3" valign="top" padding="1">
+          <Text align="center">検討内容</Text>
+        </GridCell>
+        <GridCell col="1" row="3" colspan="6" padding="1">
+          <Text>${consideredContent}</Text>
+        </GridCell>
+
+        <GridCell col="0" row="4" valign="top" padding="1">
+          <Text align="center">結論</Text>
+        </GridCell>
+        <GridCell col="1" row="4" colspan="6" padding="1">
+          <Text>${conclusion}</Text>
+        </GridCell>
+
+        <GridCell col="0" row="5" valign="top" padding="1">
+          <Text align="center">残された課題
+
+（次回の開催時期）</Text>
+        </GridCell>
+        <GridCell col="1" row="5" colspan="6" padding="1">
+          <Text>${remainingIssue}</Text>
+        </GridCell>
+      </Grid>
+    </LayoutBody>
+  </LinearLayout>
+</LayoutXml>
